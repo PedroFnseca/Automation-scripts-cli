@@ -1,0 +1,26 @@
+{
+  "name": "automation-scripts-cli",
+  "version": "1.0.0",
+  "description": "Automate tasks effortlessly via terminal scripts. Save time and boost productivity! ✨",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PedroFnseca/Automation-scripts-cli.git"
+  },
+  "author": "PedroFnseca",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/PedroFnseca/Automation-scripts-cli/issues"
+  },
+  "homepage": "https://github.com/PedroFnseca/Automation-scripts-cli#readme",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "fs": "0.0.1-security",
+    "path": "^0.12.7",
+    "yargs": "^17.7.2"
+  },
+  "type": "module"
+}
