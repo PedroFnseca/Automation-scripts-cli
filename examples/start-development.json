@@ -1,0 +1,30 @@
+[
+  {
+    "name": "gestao",
+    "description": "Open the project gestao",
+    "exec": [
+      "start cmd.exe @cmd /k cd C:/Users/pedro/Documents/Github/gestao && code . && npm run serve"
+    ]
+  },
+  {
+    "name": "mobile",
+    "description": "Open the project mobile",
+    "exec": [
+      "start cmd.exe @cmd /k cd C:/Users/pedro/Documents/Github/mobile && code . && quasar dev"
+    ]
+  },
+  {
+    "name": "api",
+    "description": "Open the project api",
+    "exec": [
+      "start cmd.exe @cmd /k cd C:/Users/pedro/Documents/Github/api && code . && npm run start:dev"
+    ]
+  },
+  {
+    "name": "sequelize-db",
+    "description": "Open the project sequelize-db",
+    "exec": [
+      "start cmd.exe @cmd /k cd C:/Users/pedro/Documents/Github/sequelize-db && code ."
+    ]
+  }
+]

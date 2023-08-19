@@ -1,0 +1,23 @@
+[
+  {
+    "name": "backup",
+    "description": "Backup important files",
+    "options": [
+      {
+        "name": "--source",
+        "alias": "-s",
+        "description": "Source directory"
+      },
+      {
+        "name": "--destination",
+        "alias": "-d",
+        "description": "Destination directory",
+        "required": true
+      }
+    ],
+    "exec": [
+      "echo 'Backing up files'",
+      "cp -r $SOURCE $DESTINATION"
+    ]
+  }
+]

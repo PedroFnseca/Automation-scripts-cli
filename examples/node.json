@@ -1,0 +1,23 @@
+[
+  {
+    "name": "example",
+    "description": "Descrição do exemplo",
+    "options": [
+      {
+        "name": "--verbose",
+        "alias": "-v",
+        "description": "Ativa o modo verbose"
+      },
+      {
+        "name": "--output",
+        "alias": "-o",
+        "description": "Especifica o arquivo de saída",
+        "required": true
+      }
+    ],
+    "exec": [
+      "echo 'Executando o comando de exemplo'",
+      "node script.js example"
+    ]
+  }
+]

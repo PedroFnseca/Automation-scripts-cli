@@ -27,9 +27,7 @@ class FileManager {
       }
     });
 
-    if (fs.existsSync(this.pathConfigFile)) {
-      fs.writeFileSync(this.pathConfigFile, '{}');
-    }
+    fs.writeFileSync(this.pathConfigFile, '{}');
   }
 
   uploadConfig(filePath) {
@@ -46,7 +44,7 @@ class FileManager {
     console.log(chalk.green('Upload successfully!'));
   }
 
-  showConfigFile() {
+  pullConfig() {
     if (!fs.existsSync(this.pathConfigFile)) {
       console.log(chalk.red('There is no file to download'));
       process.exit(1);
@@ -56,7 +54,13 @@ class FileManager {
 
     const json = JSON.parse(data);
 
-    console.log(json);
+    return json;
+  }
+
+  showConfig() {
+    const configFile = this.pullConfig();
+
+    console.log(JSON.stringify(configFile, null, 2));
   }
 }
 
